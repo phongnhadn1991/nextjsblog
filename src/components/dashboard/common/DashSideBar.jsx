@@ -1,4 +1,4 @@
-import { Calendar, ChevronDown, Home, Inbox, Newspaper, Plus, Projector, Search, Settings } from "lucide-react"
+import { Calendar, ChevronDown, Home, Inbox, LayoutDashboard, Newspaper, Plus, Projector, Search, Settings } from "lucide-react"
 
 import {
     Sidebar,
@@ -21,9 +21,9 @@ import { Collapsible, CollapsibleTrigger } from "../../ui/collapsible";
 // Menu items.
 const items = [
     {
-        title: "Home",
-        url: "/",
-        icon: Home,
+        title: "Dashboard",
+        url: "/dashboard",
+        icon: LayoutDashboard,
     },
     {
         title: "Inbox",
@@ -74,7 +74,7 @@ const DashboardSideBar = () => {
                         <SidebarMenu>
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
-                                    <SidebarMenuButton asChild isActive={item.url === '/'}>
+                                    <SidebarMenuButton asChild isActive={item.url === '/dashboard'}>
                                         <a href={item.url}>
                                             <item.icon />
                                             <span>{item.title}</span>

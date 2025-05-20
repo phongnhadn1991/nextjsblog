@@ -58,7 +58,7 @@ const UserBoard = () => {
                                 </h4>
                                 <Badge variant="secondary" className={
                                     clsx(
-                                        'capitalize',
+                                        'capitalize text-[11px]',
                                         { 'bg-red-900 text-white': item.level === roleUsers.admin }
                                     )
                                 }>

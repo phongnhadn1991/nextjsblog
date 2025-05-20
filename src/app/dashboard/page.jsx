@@ -13,7 +13,7 @@ const Dashboard = () => {
         <div className='p-topUsers'>
           <TopUsers />
         </div>
-        <div className='bg-primary-foreground'>
+        <div className='p-chartTotalUsers'>
           <ChartTotalUsers />
         </div>
         <div className='bg-primary-foreground p-4 rounded-lg'>Box Todolist</div>
