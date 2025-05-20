@@ -41,14 +41,14 @@ const listUsersPost = [
 
 const UserBoard = () => {
     return (
-        <Card>
+        <Card className='border-0 h-full'>
             <CardHeader>
                 <CardTitle>Top Users</CardTitle>
             </CardHeader>
             <CardContent>
-                <div className='flex flex-col gap-4'>
+                <div className='flex flex-col gap-2'>
                     {listUsersPost.map((item, index) => (
-                        <div key={index} className='flex gap-4 justify-between items-center pt-3 border-t'>
+                        <Card key={index} className='flex flex-row gap-4 py-2 px-3 justify-between items-center'>
                             <div className='w-12 h-12 rounded-sm relative overflow-hidden'>
                                 <Image src={item.avatar} alt={item.username} fill className='object-cover' />
                             </div>
@@ -68,7 +68,7 @@ const UserBoard = () => {
                             <div>
                                 <span className='text-sm font-medium'>{(Math.round(Math.random() * 100) / 10)}K</span>
                             </div>
-                        </div>
+                        </Card>
                     ))}
                 </div>
             </CardContent>

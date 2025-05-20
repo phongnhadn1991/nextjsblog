@@ -43,7 +43,7 @@ const chartConfig = {
 }
 const ChartTotalPosts = () => {
     return (
-        <Card className='h-full'>
+        <Card className='h-full border-0'>
             <CardHeader>
                 <CardTitle>Total Posts</CardTitle>
                 <CardDescription>January - December 2025</CardDescription>

@@ -45,7 +45,7 @@ export function ChartTotalUsers() {
         return chartData.reduce((acc, curr) => acc + curr.Users, 0)
     }, [])
     return (
-        <Card className="flex flex-col h-full">
+        <Card className="flex flex-col h-full border-0">
             <CardHeader className="items-center pb-0">
                 <CardTitle>Total Users</CardTitle>
                 <CardDescription>January - December 2025</CardDescription>
